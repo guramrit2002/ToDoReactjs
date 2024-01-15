@@ -15,19 +15,19 @@
   h1{
     text-align: center;
   }
-  .todo-inp{
+.todo-inp{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     gap: 2rem;
   }
-  .todo-input{
+.todo-input{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50rem;
+    width: 100%;
     height: 10rem;
     margin: 2rem 0;
     border-radius: 30px;
@@ -104,9 +104,10 @@
   border-bottom: 4px solid rgb(211, 227, 223);
   font-weight: bold;
 }
-
+.todo-list-area{
+  width: 60%;
+}
 .todo-list-item{
-width:50vw;
   border: solid 5px rgb(211, 227, 223);
   margin: 2rem 0;
   padding: 1rem;
@@ -130,4 +131,30 @@ width:50vw;
 {
   border: 1px solid green;
   color: green;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .todo-inp {
+    flex-direction: column;
+    gap: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .todo-input {
+    height: fit-content;
+    width: fit-content;
+    padding: 0 1rem;
+  }
+  .todo-input-item input {
+    width: fit-content;
+    display: block;
+  }
+  .todo-list-area {
+    width: 100%;
+  }
 }
