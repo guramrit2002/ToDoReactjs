@@ -106,8 +106,28 @@
 }
 
 .todo-list-item{
+width:50vw;
   border: solid 5px rgb(211, 227, 223);
   margin: 2rem 0;
   padding: 1rem;
   border-radius: 12px ;
+}
+
+.deletebutton,.donebutton{
+  height: 2.5rem;
+  border: none;
+  border-radius: 12px;
+  background-color: white;
+  cursor: pointer;
+  color: rgb(214, 36, 36);
+  margin-top: 1rem;
+  margin-right: 1rem;
+  border: 1px solid rgb(214, 36, 36);
+  padding : 0 1rem;
+}
+
+.donebutton
+{
+  border: 1px solid green;
+  color: green;
 }
